@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master_layout">
+<head>
+    <title>Royal Hotel</title>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <!--================Banner Area =================-->
+    <section class="banner_area">
+        <div class="booking_table d_flex align-items-center" id="booking">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h6>Away from monotonous life</h6>
+                    <h2>Relax Your Mind</h2>
+                    <br>
+                    <a th:href="@{/bookings/new}" class="btn theme_btn button_hover">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Banner Area =================-->
+
+    <!--================ Accommodation Area  =================-->
+    <section class="accomodation_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Hotel Accommodation</h2>
+                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast.</p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="/image/room1.jpg" alt="">
+                            <a href="#booking" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <h4 class="sec_h4">Double Deluxe Room</h4>
+                        <h5>250L.E<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="/image/room2.jpg" alt="">
+                            <a href="#booking" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <h4 class="sec_h4">Single Deluxe Room</h4>
+                        <h5>200L.E<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="/image/room3.jpg" alt="">
+                            <a href="#booking" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <h4 class="sec_h4">Honeymoon Suit</h4>
+                        <h5>750L.E<small>/night</small></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="accomodation_item text-center">
+                        <div class="hotel_img">
+                            <img src="/image/room4.jpg" alt="">
+                            <a href="#booking" class="btn theme_btn button_hover">Book Now</a>
+                        </div>
+                        <h4 class="sec_h4">Economy Double</h4>
+                        <h5>200L.E<small>/night</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Accommodation Area  =================-->
+
+    <!--================ Facilities Area  =================-->
+    <section class="facilities_area section_gap">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">
+        </div>
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_w">Hotel Facilities</h2>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and
+                            power.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Facilities Area  =================-->
+</div>
+</body>
+</html>

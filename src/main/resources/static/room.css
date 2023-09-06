@@ -1,0 +1,169 @@
+
+/* start section8 */
+main .section8 {
+    background-color: rgba(238, 233, 226, 0.212);
+    padding: 80px;
+}
+
+main .section8 .div1 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+main .section8 .div2{
+    width: 250px;
+}
+main .section8 .div1 h2{
+    font-size: 18px;
+    margin-bottom:30px ;
+}
+main .section8 .div1 p{
+    font-size: 13px;
+    margin: 15px 0px;
+    width: 200px;
+}
+
+main .section8 .div2 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(240, 146, 23);
+}
+main .section8 .div3 .border{
+    padding: 20px 0px;
+    border-top:  rgba(184, 179, 179, 0.589) 1px solid;
+    border-bottom: rgba(184, 179, 179, 0.589) 1px solid;
+}
+main .section8 .div3 div i{
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+main .section8 .div4 p{
+    color: rgb(240, 146, 23);
+}
+
+main .section8 .div4 .border{
+    padding: 20px 0px;
+    border-top:  rgba(184, 179, 179, 0.589) 1px solid;
+    border-bottom: rgba(184, 179, 179, 0.589) 1px solid;
+}
+
+main .section8 .div4 button{
+    margin: 2px;
+    padding: 5px;
+    width: 70px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 20px;
+
+}
+
+/* end section8 */
+
+/* end  main */
+
+
+/* start footer */
+footer{
+    background-color:cadetblue;
+
+}
+footer .footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer .aboutNurture {
+    color: white;
+    margin: 80px;
+    width: 300px;
+    margin-right: 0px;
+}
+footer .footer .aboutNurture h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+footer .footer .aboutNurture p{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+footer .footer .aboutNurture h4{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+footer .footer .aboutNurture div a i {
+    background-color: white;
+    color: black;
+    margin-right: 2px;
+    border-radius: 100px;
+}
+
+footer .footer .projects{
+    color: white;
+    margin: 80px;
+    width: 350px;
+    margin-right: 0px;
+}
+
+
+footer .footer .projects h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+footer .footer .projects p{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 25px;
+}
+footer .footer .gallery {
+    margin: 80px;
+    margin-left: 0px;
+    width: 200px;
+}
+
+footer .footer .gallery h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer .footer .gallery img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+footer .footer .contact{
+    color: white;
+    margin: 80px 0px;
+    
+}
+footer .footer .contact h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer .footer .contact h4{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer .footer .contact p{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+footer .Copyright{
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+footer .Copyright i {
+    color: red;
+    font-size: 15px;
+}
+
+/* end footer */

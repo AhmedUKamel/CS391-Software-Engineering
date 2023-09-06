@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master_layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Room</title>
+</head>
+<body>
+<div class="whole-wrap" layout:fragment="content">
+    <div class="container">
+        <div class="section-top-border">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br><br>
+                    <h3 class="mb-30 title_color">Edit Room</h3>
+                    <form th:action="@{/rooms/edit}" method="get">
+                        <div class="mt-10">
+                            <input type="text" name="number" th:value="${number}"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                   class="single-input">
+                        </div>
+                        <div class="mt-10">
+                            <input type="text" name="price" th:value="${room.type.price}"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                   class="single-input">
+                        </div>
+                        <div class="mt-10">
+                            <input type="text" name="typeName" th:value="${room.type.name}"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                   class="single-input">
+                        </div>
+                        <div class="input-group-icon mt-10">
+                            <div class="form-select" id="default-select2">
+                                <select name="statusName">
+                                    <option th:each="st : ${status}"
+                                            th:text="${st.name()}"
+                                            th:value="${st.name()}">
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="genric-btn info circle arrow">Save<span
+                                class="lnr lnr-arrow-right"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
