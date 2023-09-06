@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master_layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Booking</title>
+</head>
+<body>
+<div class="whole-wrap" layout:fragment="content">
+    <div class="container">
+        <div class="section-top-border">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br><br>
+                    <h3 class="mb-30 title_color">New Booking Form</h3>
+                    <form th:action="@{/bookings/add}" method="get">
+                        <div class="mt-10">
+                            <input type="text" name="Days"
+                                   onfocus="this.placeholder = 'Number of Days'" onblur="this.placeholder = ''" required
+                                   class="single-input">
+                        </div>
+                        <div class="input-group-icon mt-10">
+                            <div class="form-select" id="default-select1">
+                                <select name="Room">
+                                    <option th:each="room : ${rooms}"
+                                            th:text="${room.number} + ' (' + ${room.type.name} + ', ' + ${room.type.price} + ' L.E)'"
+                                            th:value="${room.number}">
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-group-icon mt-10">
+                            <div class="form-select" id="default-select2">
+                                <select name="Guest">
+                                    <option th:each="guest : ${guests}"
+                                            th:text="${guest.username}"
+                                            th:value="${guest.username}">
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="genric-btn info circle arrow">Add<span
+                                class="lnr lnr-arrow-right"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

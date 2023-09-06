@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master_layout">
+<head>
+    <title>Rooms</title>
+</head>
+<body>
+<div class="whole-wrap" layout:fragment="content">
+    <div class="container">
+        <div class="section-top-border">
+            <h3 class="mb-30 title_color">Table</h3>
+            <div class="progress-table-wrap">
+                <div class="progress-table">
+                    <div class="table-head">
+                        <div class="serial">No.</div>
+                        <div class="visit">Status Now</div>
+                        <div class="visit">Type</div>
+                        <div class="visit">L.E Price</div>
+                        <div class="visit">Action</div>
+                    </div>
+                    <div class="table-row" th:each="room : ${rooms}">
+                        <div class="serial" th:text="${room.number}"></div>
+                        <div class="visit" th:text="${room.status.name()}"></div>
+                        <div class="visit" th:text="${room.type.name}"></div>
+                        <div class="visit" th:text="${room.type.price}"></div>
+                        <div class="visit">
+                            <a th:href="@{/rooms/deep-clone/{number}(number=${room.number})}" class="genric-btn info radius small" style="margin-right: 2px">Deep</a>
+                            <a th:href="@{/rooms/shallow-clone/{number}(number=${room.number})}" class="genric-btn info radius small" style="margin-right: 2px">Shallow</a>
+                            <a th:href="@{/rooms/edit/{number}(number=${room.number})}" class="genric-btn info radius small">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
